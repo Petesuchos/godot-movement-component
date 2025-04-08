@@ -6,11 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://bni7lpwse61q3" path="res://character/sprites/jump.png" id="3_ugqs2"]
 [ext_resource type="Texture2D" uid="uid://dr5nnmv2uyy0q" path="res://character/sprites/fall.png" id="4_hx151"]
 [ext_resource type="Texture2D" uid="uid://bctwpj55oqgxg" path="res://character/sprites/attack.png" id="5_0rvpn"]
-[ext_resource type="Script" uid="uid://d6rbiom3til5" path="res://components/gravity_component.gd" id="7_tgjim"]
-[ext_resource type="Script" uid="uid://0c4uuxjmljmx" path="res://components/input_component.gd" id="8_wy5t8"]
-[ext_resource type="Script" uid="uid://cgwcpd7snlwio" path="res://components/movement_component.gd" id="9_dy06j"]
-[ext_resource type="Script" uid="uid://pofbla1yyo7y" path="res://components/animation_component.gd" id="10_qkjfd"]
-[ext_resource type="Script" uid="uid://px00fnxyte07" path="res://components/jump_component.gd" id="11_gx66j"]
+[ext_resource type="PackedScene" uid="uid://ctlg8hyxqsgew" path="res://components/GravityComponent.tscn" id="7_gx66j"]
+[ext_resource type="PackedScene" uid="uid://bpbp5yl6w7fog" path="res://components/AnimationComponent.tscn" id="8_8brn5"]
+[ext_resource type="PackedScene" uid="uid://ccy75ygpbq7tf" path="res://components/AdvancedJumpComponent.tscn" id="9_b4qc5"]
+[ext_resource type="PackedScene" uid="uid://dy2xtn15oqdva" path="res://components/MovementComponent.tscn" id="10_hd715"]
+[ext_resource type="PackedScene" uid="uid://dwctjqtaj2ui0" path="res://components/InputComponent.tscn" id="11_hq3og"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_phxro"]
 radius = 15.0
@@ -281,7 +281,7 @@ gravity_component = NodePath("GravityComponent")
 input_component = NodePath("InputComponent")
 movement_component = NodePath("MovementComponent")
 animation_component = NodePath("AnimationComponent")
-jump_component = NodePath("JumpComponent")
+jump_component = NodePath("AdvancedJumpComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_phxro")
@@ -295,19 +295,14 @@ libraries = {
 &"": SubResource("AnimationLibrary_hx151")
 }
 
-[node name="GravityComponent" type="Node" parent="."]
-script = ExtResource("7_tgjim")
+[node name="GravityComponent" parent="." instance=ExtResource("7_gx66j")]
 
-[node name="InputComponent" type="Node" parent="."]
-script = ExtResource("8_wy5t8")
-
-[node name="MovementComponent" type="Node" parent="."]
-script = ExtResource("9_dy06j")
-
-[node name="AnimationComponent" type="Node" parent="." node_paths=PackedStringArray("sprite", "animation_player")]
-script = ExtResource("10_qkjfd")
+[node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite", "animation_player") instance=ExtResource("8_8brn5")]
 sprite = NodePath("../Sprite2D")
 animation_player = NodePath("../AnimationPlayer")
 
-[node name="JumpComponent" type="Node" parent="."]
-script = ExtResource("11_gx66j")
+[node name="AdvancedJumpComponent" parent="." instance=ExtResource("9_b4qc5")]
+
+[node name="MovementComponent" parent="." instance=ExtResource("10_hd715")]
+
+[node name="InputComponent" parent="." instance=ExtResource("11_hq3og")]
