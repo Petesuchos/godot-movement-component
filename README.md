@@ -8,7 +8,7 @@ Highly recommended!
 
 
 ## Assets:
- 
-    - [Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [https://jumpbutton.itch.io/](https://jumpbutton.itch.io/)
+
+- [Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [https://jumpbutton.itch.io/](https://jumpbutton.itch.io/)
     
-    - Icons from [SVG Repo](https://www.svgrepo.com/)
+- Icons from [SVG Repo](https://www.svgrepo.com/)
