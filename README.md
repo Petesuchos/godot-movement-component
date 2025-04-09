@@ -12,3 +12,5 @@ Highly recommended!
 - [Girl Knight Character Asset](https://jumpbutton.itch.io/girlknightasset) by [https://jumpbutton.itch.io/](https://jumpbutton.itch.io/)
     
 - Icons from [SVG Repo](https://www.svgrepo.com/)
+
+- [Legacy Fantasy](https://anokolisa.itch.io/sidescroller-pixelart-sprites-asset-pack-forest-16x16)

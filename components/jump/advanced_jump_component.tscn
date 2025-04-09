@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ccy75ygpbq7tf"]
 
-[ext_resource type="Script" uid="uid://151ogrkoak7n" path="res://components/advanced_jump_component.gd" id="1_8y45y"]
+[ext_resource type="Script" uid="uid://151ogrkoak7n" path="res://components/jump/advanced_jump_component.gd" id="1_8y45y"]
 
 [node name="AdvancedJumpComponent" type="Node2D" node_paths=PackedStringArray("jump_buffer_timer", "coyote_timer")]
 script = ExtResource("1_8y45y")

@@ -1,4 +1,4 @@
-@icon("res://common/icons/jump_icon.svg")
+@icon("res://components/jump/jump_icon.svg")
 class_name JumpComponent
 extends Node
 

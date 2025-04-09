@@ -1,4 +1,4 @@
-@icon("res://common/icons/advanced_jump_icon.svg")
+@icon("res://components/jump/advanced_jump_icon.svg")
 class_name AdvancedJumpComponent
 extends Node
 

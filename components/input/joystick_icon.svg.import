@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cavcgk8tcsaap"
-path="res://.godot/imported/advanced_jump_icon.svg-ab6ab3b04c8d510bbc3cda3ffa844d63.ctex"
+uid="uid://cru8gl0odkubj"
+path="res://.godot/imported/joystick_icon.svg-de6eabaf66298a837b70a31c7f1c4561.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://common/icons/advanced_jump_icon.svg"
-dest_files=["res://.godot/imported/advanced_jump_icon.svg-ab6ab3b04c8d510bbc3cda3ffa844d63.ctex"]
+source_file="res://components/input/joystick_icon.svg"
+dest_files=["res://.godot/imported/joystick_icon.svg-de6eabaf66298a837b70a31c7f1c4561.ctex"]
 
 [params]
 

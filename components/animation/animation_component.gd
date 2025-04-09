@@ -1,4 +1,5 @@
-@icon("res://common/icons/animation_icon.svg")
+@tool
+@icon("res://components/animation/animation_icon.svg")
 class_name AnimationComponent
 extends Node
 
@@ -34,3 +35,11 @@ func handle_jump_animation(is_jumping: bool, is_falling: bool) -> void:
         animation_player.play(jump_animation_name)
     elif is_falling:
         animation_player.play(fall_animation_name)
+
+func _get_configuration_warnings() -> PackedStringArray:
+    var warnings : PackedStringArray = []
+    if not sprite:
+        warnings.append("This node needs a Sprite2D.")
+    if not animation_player:
+        warnings.append("This node needs an AnimationPlayer.")
+    return warnings

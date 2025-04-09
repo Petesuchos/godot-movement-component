@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhyly5gr2napq"
-path="res://.godot/imported/gravity_icon.svg-301c4e11a1d131deaad5dcc96d5e0384.ctex"
+uid="uid://oa7mtcy8oefb"
+path="res://.godot/imported/movement_icon.svg-a1743d8bfe252bc35eeeba817a53c069.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://common/icons/gravity_icon.svg"
-dest_files=["res://.godot/imported/gravity_icon.svg-301c4e11a1d131deaad5dcc96d5e0384.ctex"]
+source_file="res://components/movement/movement_icon.svg"
+dest_files=["res://.godot/imported/movement_icon.svg-a1743d8bfe252bc35eeeba817a53c069.ctex"]
 
 [params]
 

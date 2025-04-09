@@ -1,4 +1,4 @@
-@icon("res://common/icons/joystick_icon.svg")
+@icon("res://components/input/joystick_icon.svg")
 class_name InputComponent
 extends Node
 

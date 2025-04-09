@@ -1,11 +1,11 @@
-@icon("res://common/icons/movement_icon.svg")
+@icon("res://components/movement/movement_icon.svg")
 class_name MovementComponent 
 extends Node
 
 @export_subgroup("Settings")
 @export var speed: float = 200.0
 @export var ground_acceleration: float = 15.0
-@export var ground_deceleration: float = 15.0
+@export var ground_deceleration: float = 20.0
 @export var air_acceleration: float = 25.0
 @export var air_deceleration: float = 5.0
 
